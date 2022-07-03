@@ -4,6 +4,12 @@ variable "tags" {
   default     = {}
 }
 
+variable "env" {
+  description = "Environment"
+  type        = string
+  default     = ""
+}
+
 variable "create_vpc" {
   description = "Controls if VPC should be created (it affects almost all resources)"
   type        = bool
